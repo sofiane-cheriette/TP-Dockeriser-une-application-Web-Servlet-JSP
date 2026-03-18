@@ -1,0 +1,80 @@
+/* ── Reset & base ─────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Arial, Helvetica, sans-serif; font-size: 15px; background: #f5f3ff; color: #1e1b4b; }
+a    { color: #7c3aed; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ── Navbar ──────────────────────────────────────────────── */
+.navbar {
+  background: #6b21a8;
+  padding: 0 2rem;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar-brand { color: #fff; font-size: 1.1rem; font-weight: bold; }
+.nav-link     { color: #e9d5ff; margin-left: 1.2rem; font-size: 0.9rem; }
+.nav-link:hover  { color: #fff; text-decoration: none; }
+.nav-link.active { color: #fff; font-weight: bold; }
+.nav-user     { color: #c4b5fd; margin-left: 1.2rem; font-size: 0.9rem; }
+
+/* ── Container ───────────────────────────────────────────── */
+.container { max-width: 960px; margin: 2rem auto; padding: 0 1rem; }
+
+h1 { font-size: 1.6rem; color: #6b21a8; margin-bottom: 1.2rem; }
+
+/* ── Table ───────────────────────────────────────────────── */
+.table { width: 100%; border-collapse: collapse; background: #fff;
+         border-radius: 6px; overflow: hidden;
+         box-shadow: 0 1px 4px rgba(0,0,0,.08); }
+.table thead tr { background: #4c1d95; color: #fff; }
+.table th, .table td { padding: .65rem 1rem; text-align: left; }
+.table tbody tr:nth-child(even) { background: #f5f3ff; }
+.table tbody tr:hover { background: #ede9fe; }
+
+/* ── Buttons ─────────────────────────────────────────────── */
+.btn {
+  display: inline-block; padding: .45rem 1rem;
+  border: none; border-radius: 4px; cursor: pointer;
+  font-size: .9rem; font-weight: bold; transition: opacity .15s;
+}
+.btn:hover { opacity: .85; }
+.btn-primary { background: #7c3aed; color: #fff; }
+.btn-danger  { background: #dc2626; color: #fff; }
+.btn-small   { padding: .3rem .75rem; font-size: .8rem; background: #06b6d4; color: #fff; }
+.btn-full    { width: 100%; text-align: center; padding: .7rem; margin-top: .5rem; }
+
+/* ── Alerts ──────────────────────────────────────────────── */
+.alert { padding: .7rem 1rem; border-radius: 4px; margin-bottom: 1rem; font-size: .95rem; }
+.alert-error { background: #fef2f2; color: #dc2626; border: 1px solid #fca5a5; }
+.alert-info  { background: #eff6ff; color: #1e40af; border: 1px solid #93c5fd; }
+
+/* ── Login box ───────────────────────────────────────────── */
+.login-box {
+  background: #fff; border-radius: 8px; padding: 2rem;
+  max-width: 400px; margin: 3rem auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,.10);
+}
+.login-box h1 { text-align: center; margin-bottom: 1.5rem; }
+
+.form-group  { margin-bottom: 1rem; }
+.form-group label { display: block; font-weight: bold; margin-bottom: .3rem; font-size: .9rem; }
+.form-control {
+  width: 100%; padding: .5rem .75rem;
+  border: 1px solid #d1d5db; border-radius: 4px; font-size: .95rem;
+}
+.form-control:focus { outline: 2px solid #7c3aed; border-color: #7c3aed; }
+
+.hint { text-align: center; margin-top: 1rem; font-size: .85rem; color: #6b7280; }
+code  { background: #ede9fe; padding: .1rem .35rem; border-radius: 3px; font-size: .85rem; }
+
+/* ── Panier footer ───────────────────────────────────────── */
+.panier-footer {
+  display: flex; align-items: center; gap: 1.5rem;
+  margin-top: 1.2rem; padding: .8rem 1rem;
+  background: #fff; border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0,0,0,.08);
+}
+.total-label  { font-weight: bold; font-size: 1rem; }
+.total-amount { font-size: 1.2rem; font-weight: bold; color: #6b21a8; margin-right: auto; }
